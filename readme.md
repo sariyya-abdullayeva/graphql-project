@@ -1,1 +1,1 @@
-### Use your Gitea username and password to log in
+- Use your Gitea username and password to log in
