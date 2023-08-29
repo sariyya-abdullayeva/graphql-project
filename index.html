@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- login in form -->
+        <div class="login-container">
+            <h2>Login</h2>
+            <h3 class="error-message"></h3>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <!-- user info and static graph container -->
+        <div class="graphs-container">
+            <div class="user-info">
+                    <div class="user-info-container">
+                        <p class="info">User name: <span class="name">Loading...</span></p>
+                        <p class="info">Total Xps: <span class="total-xps">Loading...</span></p>
+                        <p class="info">Audit ratio: <span class="audit-ratio">Loading...</span></p>
+                        <button class="logout">Logout</button>
+                        <div class="user-info-container-shadow"></div>
+                    </div>
+                    <div class="graph one">
+                        <svg class="lineplot-graph-exercises"></svg>
+                    </div>
+                    <div class="graph four">
+                        <svg class="pie-chart-audit-ratio"></svg>
+                    </div>
+            </div>
+            <!-- <div class="separating-bar"></div> -->
+            <!-- <div class="h-divider">
+                <div class="shadow"></div>
+                <div class="text"><i>More Info</i></div>
+              </div> -->
+            <div class="statistic-graphs">
+                <div class="graph two">
+                    <svg class="lineplot-graph-projects"></svg>
+                </div>
+                <div class="graph three">
+                    <svg class="pie-chart-exercise-grades"></svg>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
