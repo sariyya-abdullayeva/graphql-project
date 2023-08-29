@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
-body{
+
+body {
     height: 100%;
     margin: 0;
     display: flex;
@@ -11,25 +12,32 @@ body{
 .wrapper {
     display: flex;
     justify-content: center;
-    align-items: flex-start;  /* align-items to start for wrapper */
-    width: 100%;  /* occupy full width */
-    min-height: 100vh;  /* At least full viewport height */
+    align-items: flex-start;
+    /* align-items to start for wrapper */
+    width: 100%;
+    /* occupy full width */
+    min-height: 100vh;
+    /* At least full viewport height */
     /* padding-left:1rem; */
     padding-right: 2rem;
-    box-sizing: border-box;  /* padding included in width & height */
+    box-sizing: border-box;
+    /* padding included in width & height */
     overflow-y: scroll;
     /* background: linear-gradient(168deg, rgba(2,0,36,1) 0%, rgba(42,14,224,1) 50%, rgba(0,212,255,1) 100%); */
     background: radial-gradient(ellipse at 40% 50%, #220cad, #000);
 }
 
 .graphs-container {
-    flex: 1;  /* take up remaining space */
+    flex: 1;
+    /* take up remaining space */
 }
+
 .login-container {
     border: 1px solid #ccc;
     padding: 20px;
+    margin-top: 2rem;
     background-color: white;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 #login-form {
@@ -64,22 +72,28 @@ body{
     overflow-y: auto;
 }
 
-.user-info{
+.user-info {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 2px;
     grid-row-gap: 0px;
     /* background-color: rgba(13, 13, 9, 0.785); */
-    position: relative; /* To enable positioning of the shadow */
+    position: relative;
+    /* To enable positioning of the shadow */
 }
+
 .graph {
     border-radius: 30px;
     margin: 0.5rem;
-    background: rgba(255, 255, 255, 0.2); /* Adjust the opacity as needed */
-    backdrop-filter: blur(5px); /* You can adjust the blur radius as you like */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adjust as needed for the dropshadow */
+    background: rgba(255, 255, 255, 0.2);
+    /* Adjust the opacity as needed */
+    backdrop-filter: blur(5px);
+    /* You can adjust the blur radius as you like */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    /* Adjust as needed for the dropshadow */
 }
+
 /* CSS HEX */
 /* --russian-violet: #120939ff;
 --icterine: #F6F65Cff;
@@ -87,8 +101,8 @@ body{
 --byzantine-blue: #064DE4ff;
 --malachite: #32E95Cff; */
 .graph.one {
-    grid-area:  1 / 2 / 2 / 3; 
-    border-bottom: 1px solid black ;
+    grid-area: 1 / 2 / 2 / 3;
+    border-bottom: 1px solid black;
 }
 
 .graph.four {
@@ -112,24 +126,28 @@ body{
 }
 
 
-.info{
+.info {
     margin-bottom: 10px;
-    color:  #FFFF33;
+    color: #FFFF33;
 }
-.name, .total-xps, .audit-ratio {
+
+.name,
+.total-xps,
+.audit-ratio {
     font-weight: bold;
     color: #fff;
-  text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
     /* color: #FFFF33; */
 }
+
 .statistic-graphs {
     height: 50%;
     width: 100%;
@@ -139,65 +157,76 @@ body{
     padding-top: 20px;
 
     /* Frosted glass effect */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Blurring the background content */
-    border-radius: 10px; /* Optional: gives a softer edge */
-    border: 1px solid rgba(255, 255, 255, 0.15); /* Optional: a light border can enhance the effect */
+    background: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent white background */
+    backdrop-filter: blur(10px);
+    /* Blurring the background content */
+    border-radius: 10px;
+    /* Optional: gives a softer edge */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    /* Optional: a light border can enhance the effect */
 }
 
-.graph{
+.graph {
     background-color: rgba(250, 250, 241, 0.184);
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
 }
 
-.graph.two, .graph.three, 
-.graph.one, .graph.four {
+.graph.two,
+.graph.three,
+.graph.one,
+.graph.four {
     /* height: 50%; */
-    flex: 1; /* This will make each graph equally spread across the .statistic-graphs container */
+    flex: 1;
+    /* This will make each graph equally spread across the .statistic-graphs container */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.graph.two{
+.graph.two {
     border-right: 1px solid black;
 }
+
 /* error */
-.error-message{
+.error-message {
     display: none;
-    color:red;
+    color: red;
 }
 
 
 
 .logout {
     width: 100%;
-    padding: 10px 0; 
+    padding: 10px 0;
     margin-top: 10px;
-    background-color:  #F41AF4ff;
+    background-color: #F41AF4ff;
     color: white;
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    outline: none; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    font-size: 16px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
     font-weight: bold;
 }
 
 
 .logout:active {
-    transform: translateY(4px); /* Push the button down a bit */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce the shadow size when pressed */
+    transform: translateY(4px);
+    /* Push the button down a bit */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Reduce the shadow size when pressed */
 }
 
 /* Optional: change button color on hover for a better user experience */
 .logout:hover {
-    background-color:rgb(167, 6, 167);;
+    background-color: rgb(167, 6, 167);
+    ;
 }
 
 
@@ -228,8 +257,8 @@ body{
     border-radius: 125px/12px;
     box-shadow: 0 0 8px black;
   } */
-  
-  /* .h-divider .text {
+
+/* .h-divider .text {
     width: 100px;
     height: 45px;
     padding: 10px;
